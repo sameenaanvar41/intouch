@@ -1,0 +1,136 @@
+import { Dimensions, StyleSheet } from "react-native";
+import {View} from 'react-native';
+
+const style= (width,height) => 
+StyleSheet.create({
+  container:{
+    flex:1,
+    padding:15,
+    backgroundColor:'#F5F5F5'
+   },
+   carticon:
+   {
+    width:25,
+    height:25,
+    resizeMode:'contain',
+    marginRight:15,
+    
+   },
+   productimage:
+   {
+    width:75,
+    height:90,
+    resizeMode:'contain',
+    marginTop:35,
+    
+   },
+   productview:
+   {
+    alignSelf:'center',
+    backgroundColor:'white',
+    borderRadius:15,
+    overflow:'hidden',
+    flexDirection:'row',
+    alignItems:'center',
+    width:width * 0.9,
+    padding:15,
+    marginTop:10
+   },
+   remove:
+   {
+     marginLeft:4,
+     width:20,height:20,
+     resizeMode:'contain'
+   },
+   removeview:
+   {
+    position:'absolute',
+    bottom:50,
+    right:-0.8,
+    backgroundColor:'red',
+    borderRadius:10,
+    overflow:'hidden',
+    padding:5,
+  
+   },
+   secondview:
+   {
+    borderLeftColor:'gray',
+    borderLeftWidth:1,
+    paddingLeft:10,
+    marginLeft:10,
+    width:width * 0.6,
+    overflow:'hidden'
+   },
+   title:
+   {
+    color:'black',
+    fontSize:18
+  },
+  price:
+   {
+    color:'bla4k',
+    fontSize:18,
+    color:'black',
+   },
+   cartcount:
+   {
+    position:'absolute',
+    right:10,
+    top:-10,
+    backgroundColor:'red',
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius:14,
+    overflow:'hidden',
+    paddingHorizontal:6,
+    paddingVertical:2,
+    zIndex:9,
+   },
+count:
+{
+  fontSize:18,
+  color:'white'
+},
+  desc:
+  {
+    color:'black',
+    fontSize:16,
+    color:'black',
+  },
+  bottomview:
+  {
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    marginVertical:5,
+  },
+  offview:
+  {
+    borderRadius:15,
+    backgroundColor:'lightgreen',
+    padding:5,
+    marginHorizontal:5,
+  },
+  offtext:
+  {
+    color:'white',
+    fontSize:13,
+    color:'black',
+  },
+  cartview:
+  {
+   borderRadius:15,
+   borderColor:'green',
+   borderWidth:1,
+   padding:5,
+   marginHorizontal:5
+  },
+  carttext:
+  {
+    color:'green',
+    fontSize:13,
+    color:'black',
+  },
+});
+export default style;

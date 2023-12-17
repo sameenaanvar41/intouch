@@ -1,0 +1,131 @@
+import { StyleSheet } from "react-native";
+import colors from "../common/colors";
+const style=(width,height,isportrait)=>
+StyleSheet.create({  
+  
+mainCon:
+{
+    flex:1,
+    marginVertical:25,
+    padding:15,
+    overflow:'hidden',
+    backgroundColor:colors.white,
+},
+drawerView:
+{
+
+    flexDirection:'row',
+    alignItems:'center',
+    paddingVertical:14,
+    justifyContent:'space-between',
+},
+drawerInner:
+{
+    flexDirection:'row',
+    alignItems:'center',
+},
+icon:
+{
+    width:20,
+    height:35,
+    resizeMode:'contain',
+    marginRight:10,
+   
+},
+arrow:
+{
+  backgroundColor:'#50C878',
+  overflow:'hidden',
+  borderRadius:15,
+},
+iconSecond:
+{
+  width:20,
+  height:25,
+  resizeMode:'contain',
+  backgroundColor:'#0BDA51',
+  overflow:'hidden',
+  borderRadius:25 / 2,
+},
+drawerText:
+{
+  fontSize:18,
+  color:'black'
+},
+logoutText:
+{
+  fontSize:16,
+},
+supportView:
+{
+  borderRadius:20,
+  backgroundColor:colors.secondaryGreen,
+  padding:15,
+  marginVertical:15,
+},
+supportTouch:
+{
+  borderRadius:30,
+  backgroundColor:colors.secondaryGreen,
+  padding:15,
+  marginVertical:10,
+  width:'50%',
+  justifyContent:'center',
+  alignItems:'center',
+},
+supportHead:{
+  fontSize:18,
+  lineHeight:19,
+},
+supportContent:
+{
+  fontSize:15,
+  lineHeight:19,
+},
+supportText:
+{
+ fontSize:18,
+},
+inputText:
+{
+ fontSize:20,
+ color:colors.white,
+},
+logoutview:
+{
+  borderColor:colors.black,
+  borderWidth:1,
+  paddingVertical:2,
+  backgroundColor:colors.secondaryGreen,
+  justifyContent:'center',
+  alignItems:'center',
+  width:'50%',
+  borderRadius:10,
+  flexDirection:'row',
+},
+image:
+{
+  width:80,
+  height:80,
+  borderRadius:width * 0.15
+},
+accounttouch:{
+  flexDirection:'row',
+  alignItems:'center',
+  borderBottomWidth:1,
+  borderBottomColor:colors.black,
+  paddingVertical:25,
+  },
+  accountimageview:
+  {
+    width:55,
+    height:55,
+    borderRadius:20,
+    backgroundColor:colors.gray,
+    justifyContent:'center',
+    alignItems:'center'
+     }
+
+
+});
+export default style;
